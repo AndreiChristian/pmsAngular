@@ -1,5 +1,12 @@
+@import 'src/styles.scss';
+
 .container {
   height: 100%;
+}
+
+section{
+    width: 95%;
+    margin: 2vh auto;
 }
 
 .inner-container {
@@ -12,8 +19,10 @@
   
 }
 
+// i want to use the variables from styles.scss
+
 a{
-    color: royalblue;
+    color: $primary;
 }
 
 .links mat-list-item {
@@ -22,6 +31,6 @@ a{
 }
 
 .links mat-list-item:hover {
-  background-color: rgba(65, 105, 225, 0.2);
+  background-color: $primary-hover;
   border-radius: 5px;
 }
