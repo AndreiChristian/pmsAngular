@@ -10,9 +10,16 @@ import { FooterComponent } from './UI/footer/footer.component';
 import { GuestComponent } from './guest/guest.component';
 import { GuestTableComponent } from './guest/guest-table/guest-table.component';
 import { GuestItemComponent } from './guest/guest-item/guest-item.component';
+import { RoomsComponent } from './rooms/rooms.component';
+import { RoomTypesComponent } from './room-types/room-types.component';
+import { ReservationsComponent } from './reservations/reservations.component';
+import { HomeComponent } from './home/home.component';
+import { InvoicesComponent } from './invoices/invoices.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SigninComponent } from './auth/signin/signin.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent],
+  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
