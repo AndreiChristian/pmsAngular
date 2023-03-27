@@ -1,14 +1,27 @@
-.container{
-    height: 100%;
+.container {
+  height: 100%;
 }
 
-
-
-.inner-container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+.inner-container {
+  margin: 0 1vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  
 }
 
+a{
+    color: royalblue;
+}
+
+.links mat-list-item {
+  margin: 0.5vh 0;
+  
+}
+
+.links mat-list-item:hover {
+  background-color: rgba(65, 105, 225, 0.2);
+  border-radius: 5px;
+}
