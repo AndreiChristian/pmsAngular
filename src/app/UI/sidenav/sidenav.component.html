@@ -1,4 +1,50 @@
-<mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+<mat-drawer-container class="container">
+    <!-- the content inside the side navigation, contains three sections, first is the 
+        logo, second is the links and third is actions -->
+    <!-- the first section, containing the logo! -->
+
+    <mat-drawer mode="side" opened>
+        <div class="inner-container">
+            <mat-list>
+                <mat-list-item>
+                    <button mat-icon-button aria-label="Example
+                        icon button with a home icon">
+                        <mat-icon>home</mat-icon>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>{{currentTime}}</mat-list-item>
+            </mat-list>
+
+            <!-- the second section, containing the links! -->
+
+            <mat-list>
+                <mat-list-item matRipple><a>DASHBOARD</a></mat-list-item>
+                <mat-list-item matRipple><a>RESERVATIONS</a></mat-list-item>
+                <mat-list-item matRipple><a>ROOMS</a></mat-list-item>
+                <mat-list-item matRipple><a>ROOM TYPES</a></mat-list-item>
+                <mat-list-item matRipple><a>GUESTS</a></mat-list-item>
+                <mat-list-item matRipple><a>INVOICES</a></mat-list-item>
+                <mat-list-item matRipple><a>REPORTS</a></mat-list-item>
+            </mat-list>
+
+            <!-- the third section, containing the actions! -->
+
+            <mat-list>
+                <mat-list-item>
+                    <button mat-icon-button aria-label="Example
+                        icon button with a home icon">
+                        <mat-icon>sunny</mat-icon>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <button mat-icon-button aria-label="Example
+                        icon button with a home icon">
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>Logout</mat-list-item>
+            </mat-list>
+        </div>
+    </mat-drawer>
     <mat-drawer-content>Main content</mat-drawer-content>
 </mat-drawer-container>

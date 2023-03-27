@@ -15,7 +15,6 @@ import { FooterComponent } from './UI/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-
   ],
   providers: [MaterialModule],
   bootstrap: [AppComponent],
