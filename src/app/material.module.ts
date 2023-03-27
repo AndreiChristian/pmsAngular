@@ -7,6 +7,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     MatInputModule,
     MatPaginatorModule,
+    MatSortModule,
   ],
   exports: [
     MatSidenavModule,
@@ -28,6 +30,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     MatInputModule,
     MatPaginatorModule,
+    MatSortModule,
   ],
 })
 export class MaterialModule {}

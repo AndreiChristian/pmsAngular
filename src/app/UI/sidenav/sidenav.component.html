@@ -17,7 +17,9 @@
                 <mat-list-item matRipple> <a>RESERVATIONS</a></mat-list-item>
                 <mat-list-item matRipple> <a>ROOMS</a></mat-list-item>
                 <mat-list-item matRipple> <a>ROOM TYPES</a></mat-list-item>
-                <mat-list-item matRipple> <a>GUESTS</a></mat-list-item>
+                <mat-list-item matRipple> <a 
+                    routerLink="/guests"
+                     >GUESTS</a></mat-list-item>
                 <mat-list-item matRipple> <a>INVOICES</a></mat-list-item>
                 <mat-list-item matRipple> <a>REPORTS</a></mat-list-item>
             </mat-list>
@@ -44,7 +46,7 @@
     <mat-drawer-content>
         <section>
 
-            <app-guest></app-guest>
+            <router-outlet></router-outlet>
 
         </section>
     </mat-drawer-content>
