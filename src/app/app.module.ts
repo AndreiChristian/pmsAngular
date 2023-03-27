@@ -17,9 +17,13 @@ import { HomeComponent } from './home/home.component';
 import { InvoicesComponent } from './invoices/invoices.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SigninComponent } from './auth/signin/signin.component';
+import { RoomTypesListComponent } from './room-types/room-types-list/room-types-list.component';
+import { RoomTypesItemComponent } from './room-types/room-types-item/room-types-item.component';
+import { RoomsListComponent } from './rooms/rooms-list/rooms-list.component';
+import { RoomsItemComponent } from './rooms/rooms-item/rooms-item.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent],
+  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent, RoomTypesListComponent, RoomTypesItemComponent, RoomsListComponent, RoomsItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
