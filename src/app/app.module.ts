@@ -22,6 +22,7 @@ import { RoomTypesItemComponent } from './room-types/room-types-item/room-types-
 import { RoomsListComponent } from './rooms/rooms-list/rooms-list.component';
 import { RoomsItemComponent } from './rooms/rooms-item/rooms-item.component';
 import { NewReservationComponent } from './new-reservation/new-reservation.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent, RoomTypesListComponent, RoomTypesItemComponent, RoomsListComponent, RoomsItemComponent, NewReservationComponent],
@@ -30,6 +31,7 @@ import { NewReservationComponent } from './new-reservation/new-reservation.compo
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule
   ],
   providers: [MaterialModule],
   bootstrap: [AppComponent],

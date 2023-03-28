@@ -12,4 +12,9 @@ export class RoomTypesService {
     const roomType: RoomType = this.roomTypes.find((r) => r.id === id);
     return roomType;
   }
+
+  addAmenity(id: number, amenity: string) {
+    const roomType: RoomType = this.roomTypes.find((r) => r.id === id);
+    roomType.amenities.push(amenity);
+  }
 }

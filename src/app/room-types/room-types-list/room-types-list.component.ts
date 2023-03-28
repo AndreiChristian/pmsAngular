@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 import { UserData } from 'src/app/guest/guest-table/guest-table.component';
 import { RoomType } from 'src/app/models/room-type.model';
 import { RoomTypesService } from '../room-types.service';
@@ -18,10 +19,10 @@ export class RoomTypesListComponent {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(private roomTypesService: RoomTypesService) {
-    // Create 100 users
-
-    // Assign the data to the data source for the table to render
+  constructor(
+    private roomTypesService: RoomTypesService,
+    private router: Router
+  ) {
     this.dataSource = new MatTableDataSource(roomTypesService.roomTypes);
   }
 
@@ -37,5 +38,9 @@ export class RoomTypesListComponent {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  goToRoomType(id: number) {
+    this.router.navigate(['/roomtypes', id]);
   }
 }

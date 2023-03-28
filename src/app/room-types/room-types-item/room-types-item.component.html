@@ -1,22 +1,50 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>{{roomType.name}}</mat-card-title>
-    <mat-card-subtitle>{{roomType.description}}</mat-card-subtitle>
+    <mat-card-title>
+      <h1>{{roomType.name}}</h1>
+    </mat-card-title>
+    <mat-card-subtitle><h3>
+        {{roomType.description}}
+      </h3></mat-card-subtitle>
   </mat-card-header>
   <mat-divider></mat-divider>
   <mat-card-content>
+    <h2>Number of rooms : {{roomType.numberOfRooms}}</h2>
+    <div class="inner-container">
 
-    <mat-selection-list>
-      <mat-list-option *ngFor="let amenty of roomType.amenities"
-        [selected]="amenty? true: false"> {{amenty}} </mat-list-option>
-    </mat-selection-list>
+      <span>
+        <h2>Amenties</h2>
+        <mat-divider></mat-divider>
+        <mat-selection-list>
+          <mat-list-option *ngFor="let amenty of roomType.amenities"
+            [selected]="amenty? true: false" color="primary"> {{amenty}}
+          </mat-list-option>
+        </mat-selection-list>
 
-    <div class="form">
-      <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>Add extra amenities</mat-label>
-        <input matInput placeholder="Ex. TV" value="TV">
-      </mat-form-field>
-      <button mat-button>ADD</button>
+        <div class="form">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Add extra amenities</mat-label>
+            <input matInput placeholder="Ex. TV" [(ngModel)]="amenityInput">
+          </mat-form-field>
+          <button mat-raised-button color="primary" [disabled]="!amenityInput"
+            (click)="onAddAmenity()">ADD</button>
+        </div>
+      </span>
+      <span>
+        <h2>Room Details</h2>
+        <mat-divider></mat-divider>
+        <mat-list>
+          <mat-list-item>Price : ${{roomType.basePrice}} </mat-list-item>
+          <mat-list-item>View : {{ roomType.view }} </mat-list-item>
+          <mat-list-item>Capacity : {{roomType.capacity}} </mat-list-item>
+          <mat-list-item>
+            <mat-list>
+              <mat-list-item *ngFor="let bed of roomType.bedConfiguration">
+                {{bed}} </mat-list-item>
+            </mat-list>
+          </mat-list-item>
+        </mat-list>
+      </span>
     </div>
   </mat-card-content>
 </mat-card>
