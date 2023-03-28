@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{roomType.name}}</mat-card-title>
+    <mat-card-subtitle>{{roomType.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+
+    <mat-selection-list>
+      <mat-list-option *ngFor="let amenty of roomType.amenities"
+        [selected]="amenty? true: false"> {{amenty}} </mat-list-option>
+    </mat-selection-list>
+
+    <div class="form">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Add extra amenities</mat-label>
+        <input matInput placeholder="Ex. TV" value="TV">
+      </mat-form-field>
+      <button mat-button>ADD</button>
+    </div>
+  </mat-card-content>
+</mat-card>

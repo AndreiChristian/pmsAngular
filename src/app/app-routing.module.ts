@@ -7,6 +7,7 @@ import { ReservationsComponent } from './reservations/reservations.component';
 import { RoomTypesComponent } from './room-types/room-types.component';
 import { RoomsComponent } from './rooms/rooms.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'guests', component: GuestComponent },
