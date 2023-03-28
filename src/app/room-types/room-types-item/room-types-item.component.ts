@@ -19,7 +19,6 @@ export class RoomTypesItemComponent implements OnInit {
   ngOnInit(): void {
     this.id = +this.route.snapshot.paramMap.get('id');
     this.roomType = this.roomTypesService.getRoomTypeById(this.id);
-    console.log(this.roomType);
   }
 
   amenityInput: string = '';
