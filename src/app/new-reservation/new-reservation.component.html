@@ -1,10 +1,52 @@
 <mat-card>
-    <mat-progress-bar mode="determinate" value="20" ></mat-progress-bar>
-
+    <mat-progress-bar mode="determinate" value="20"></mat-progress-bar>
     <mat-card-header>
         <mat-card-title>NEW RESERVATION</mat-card-title>
         <mat-card-subtitle>COMPLETE THE DATA</mat-card-subtitle>
     </mat-card-header>
     <mat-divider></mat-divider>
-    <mat-card-content></mat-card-content>
+    <mat-card-content>
+        <div class="inner-container">
+            <!-- 6 cards: Guest Info -->
+
+            <!-- first card -->
+            <app-new-reservation-guest-details></app-new-reservation-guest-details>
+
+            <!-- second card -->
+            <app-new-reservation-booking-details></app-new-reservation-booking-details>
+
+            <!-- third card -->
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Guest Details</mat-card-title>
+                </mat-card-header>
+                <mat-card-content></mat-card-content>
+            </mat-card>
+
+            <!-- fourth card -->
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Guest Details</mat-card-title>
+                </mat-card-header>
+                <mat-card-content></mat-card-content>
+            </mat-card>
+
+            <!-- fifth card -->
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Guest Details</mat-card-title>
+                </mat-card-header>
+                <mat-card-content></mat-card-content>
+
+            </mat-card>
+
+            <!-- sixth card -->
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Guest Details</mat-card-title>
+                </mat-card-header>
+                <mat-card-content></mat-card-content>
+            </mat-card>
+        </div>
+    </mat-card-content>
 </mat-card>

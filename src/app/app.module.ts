@@ -23,9 +23,11 @@ import { RoomsListComponent } from './rooms/rooms-list/rooms-list.component';
 import { RoomsItemComponent } from './rooms/rooms-item/rooms-item.component';
 import { NewReservationComponent } from './new-reservation/new-reservation.component';
 import { FormsModule } from '@angular/forms';
+import { NewReservationGuestDetailsComponent } from './new-reservation/new-reservation-guest-details/new-reservation-guest-details.component';
+import { NewReservationBookingDetailsComponent } from './new-reservation/new-reservation-booking-details/new-reservation-booking-details.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent, RoomTypesListComponent, RoomTypesItemComponent, RoomsListComponent, RoomsItemComponent, NewReservationComponent],
+  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent, RoomTypesListComponent, RoomTypesItemComponent, RoomsListComponent, RoomsItemComponent, NewReservationComponent, NewReservationGuestDetailsComponent, NewReservationBookingDetailsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
