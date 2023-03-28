@@ -21,9 +21,10 @@ import { RoomTypesListComponent } from './room-types/room-types-list/room-types-
 import { RoomTypesItemComponent } from './room-types/room-types-item/room-types-item.component';
 import { RoomsListComponent } from './rooms/rooms-list/rooms-list.component';
 import { RoomsItemComponent } from './rooms/rooms-item/rooms-item.component';
+import { NewReservationComponent } from './new-reservation/new-reservation.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent, RoomTypesListComponent, RoomTypesItemComponent, RoomsListComponent, RoomsItemComponent],
+  declarations: [AppComponent, SidenavComponent, FooterComponent, GuestComponent, GuestTableComponent, GuestItemComponent, RoomsComponent, RoomTypesComponent, ReservationsComponent, HomeComponent, InvoicesComponent, LoginComponent, SigninComponent, RoomTypesListComponent, RoomTypesItemComponent, RoomsListComponent, RoomsItemComponent, NewReservationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
